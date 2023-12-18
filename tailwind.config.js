@@ -12,6 +12,27 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        mukta: ['Mukta', 'sans-serif'],
+        oxygen: ['Oxygen', 'sans-serif'],
+      },
+      colors: {
+        dark: "#1b1b1b",
+        light: "#f5f5f5",
+        primary: "#863E96",
+        primaryDark: "#58E609",
+      },
+      animation: {
+        "spin-slow": "spin 10s linear infinite",
+      },
+    },
+    screens: {
+      '2xl': { max: '1535px' },
+      xl: { max: '1279px' },
+      lg: { max: '1023px' },
+      md: { max: '767px' },
+      sm: { max: '639px' },
+      xs: { max: '479px' },
     },
   },
   plugins: [],
