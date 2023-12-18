@@ -15,6 +15,7 @@ import geeks from '@/assets/geek.svg'
 import lms from '@/assets/learning.jpg'
 import { FaGithub, FaLink } from 'react-icons/fa'
 import { GoDotFill } from 'react-icons/go'
+import TransitionEffect from '@/components/TransitionEffect'
 
 const FeaturedProject = ({ type, title, summary, image, link, github, tech }) => {
     return (
@@ -62,6 +63,8 @@ const FeaturedProject = ({ type, title, summary, image, link, github, tech }) =>
 
 const page = () => {
      return (
+        <>
+        <TransitionEffect />
         <motion.main initial="hidden" animate="visible" className='flex flex-col w-full items-center justify-center'>
             <Layout className='pt-16'>
                 <AnimatedText
@@ -145,6 +148,7 @@ const page = () => {
                 </motion.div>
             </Layout>
         </motion.main>
+        </>
     )
 }
 

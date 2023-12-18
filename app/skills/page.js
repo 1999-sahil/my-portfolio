@@ -12,9 +12,12 @@ import { GrMysql, GrReactjs } from 'react-icons/gr'
 import { BiLogoTypescript } from 'react-icons/bi'
 import { RiJavascriptFill } from 'react-icons/ri'
 import { IoLogoCss3 } from 'react-icons/io'
+import TransitionEffect from '@/components/TransitionEffect'
 
 const page = () => {
     return (
+        <>
+            <TransitionEffect />
         <motion.main initial="hidden" animate="visible" className='flex flex-col w-full items-center justify-center'>
             <Layout className='pt-16'>
                 <AnimatedText
@@ -106,6 +109,7 @@ const page = () => {
                 </motion.div>
             </Layout>
         </motion.main>
+        </>
     )
 }
 

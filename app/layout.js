@@ -2,7 +2,6 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import TransitionEffect from '@/components/TransitionEffect'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +16,6 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} w-full bg-dark min-h-screen`}>
         <Navbar />
         <div className='mb-14'>
-          <TransitionEffect />
           {children}
         </div>
         <Footer />

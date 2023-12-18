@@ -3,6 +3,7 @@
 import AnimatedText from '@/components/AnimatedText'
 import Education from '@/components/Education'
 import Layout from '@/components/Layout'
+import TransitionEffect from '@/components/TransitionEffect'
 import { aboutMe } from '@/constants/data'
 import { slideInFromLeft, slideInFromRight } from '@/utils/motion'
 import { motion } from 'framer-motion'
@@ -11,6 +12,8 @@ import { PiDotsSixVerticalBold  } from 'react-icons/pi'
 
 const page = () => {
   return (
+    <>
+    <TransitionEffect />
     <motion.main initial="hidden" animate="visible" className='flex flex-col w-full items-center justify-center'>
         <Layout className='pt-16'>
             <AnimatedText
@@ -62,6 +65,7 @@ const page = () => {
             </motion.div>
         </Layout>
     </motion.main>
+    </>
   )
 }
 

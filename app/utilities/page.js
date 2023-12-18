@@ -7,9 +7,12 @@ import AnimatedText from '@/components/AnimatedText'
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/utils/motion'
 import { SiVisualstudiocode, SiVercel, SiPrettier, SiNpm, SiCanva } from 'react-icons/si'
 import { FaLaptopCode, FaWindows, FaChrome, FaFirefox, FaGitAlt, FaFigma, FaYarn } from 'react-icons/fa'
+import TransitionEffect from '@/components/TransitionEffect'
 
 const page = () => {
     return (
+        <>
+            <TransitionEffect />
         <motion.main initial="hidden" animate="visible" className='flex flex-col w-full items-center justify-center'>
             <Layout className='pt-16'>
                 <AnimatedText
@@ -93,6 +96,7 @@ const page = () => {
                 </motion.div>
             </Layout>
         </motion.main>
+        </>
     )
 }
 
