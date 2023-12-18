@@ -9,6 +9,7 @@ import { HiExternalLink } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { slideInFromLeft, slideInFromRight } from "@/utils/motion";
 import TransitionEffect from "@/components/TransitionEffect";
+import resume from "@/assets/myResume.pdf";
 
 export default function Home() {
   return (
@@ -59,7 +60,7 @@ export default function Home() {
 
             <div className="flex items-center self-start mb-2 lg:self-center">
               <Link 
-                href='/resume.pdf' 
+                href={resume} 
                 target={'_blank'}
                 className="flex gap-1 items-center bg-light text-dark py-1 px-6 md:px-5 md:py-[2px] rounded-lg text-base font-semibold border-2 border-solid border-transparent hover:bg-dark hover:text-white hover:border-light"
               >
