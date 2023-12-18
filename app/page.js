@@ -59,8 +59,8 @@ export default function Home() {
             </motion.p>
 
             <div className="flex items-center self-start mb-2 lg:self-center">
-              <Link 
-                href={resume} 
+              <Link  
+                href='https://drive.google.com/file/d/1DjNpKYafIzS7CQWRMoWx4go4mLDjPBxE/view?usp=sharing'
                 target={'_blank'}
                 className="flex gap-1 items-center bg-light text-dark py-1 px-6 md:px-5 md:py-[2px] rounded-lg text-base font-semibold border-2 border-solid border-transparent hover:bg-dark hover:text-white hover:border-light"
               >
